@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Vida saudável</title>
+    ''
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="logo_area text-center">
+              <a href="index.html" class="yummy-logo">Vida saudável</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg">
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="yummyfood-nav"
+              >
+                <ul class="navbar-nav" id="yummy-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                      Home <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="Atendimento.html">Atendimento</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="breadcumb-area"
+      style="background-image: url(img/bg-img/breadcumb.jpg)"
+    >
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <div class="bradcumb-title text-center">
+              <h2>Conectar</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <center><h5>Agente seu atendimento particular com os nossos melhores nutricinistas.</h5></center>
+    <form action="javascript:void(0)" onsubmit="agendar()">
+      <select name="profissional" id="select-profissional" required></select>
+
+      <select name="data" id="select-data" required></select>
+
+      <select name="horario" id="select-horario" required></select>
+
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <div class="agendamentos">
+     <center><h5>Seus agendamentos</h5>
+
+      <table id="tabela-agendamentos">
+        <tr>
+          <th>nutricionista</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Preço</th>
+        </tr>
+      </table>
+
+      <p><b>Total:</b> <span id="total">R$0.00</span></p></center> 
+    </div>
+
+    <script src="agendamento.js"></script>
+  </body>
+</html>
